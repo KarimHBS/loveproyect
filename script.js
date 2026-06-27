@@ -1,28 +1,19 @@
-/*==================================
-    CONFIGURACIÓN
-==================================*/
-
-const PASSWORD = "adalay"; // Cambia aquí la contraseña
+const PASSWORD = "adalay";
 
 const frases = [
-
-    "Cada momento contigo se convirtió en mi favorito. ❤️",
-
-    "No eres una casualidad, eres mi lugar favorito.",
-
-    "Si pudiera volver a elegir, volvería a elegirte.",
-
-    "Gracias por hacer mi vida mucho más bonita.",
-
-    "Contigo descubrí que el amor también puede sentirse como hogar.",
-
-    "Esta página existe porque tú existes. 💖"
-
+    "Esta página existe porque tú existes. 💖",
+    "Este mundo sería más bonito si hubiera mas personas como tu.",
+    "Se que eres una persona en la que todos pueden confiar, y que siempre estas para ayudar a los demás.",
+    "Siempre intetnas que todos sean felices y se puedan sentir bien.",
+    "Tienes una gran capacidad de amar y de hacer sentir bien a los demás.",
+    "Siempre encuentras la forma de salir adelante no importa lo que pase.",
+    "Eres alguien que realmente si se preocupa por ser una mejor persona.",
+    "Tienes una gran empatia por otras personas.",
+    "Tu sonrisa es de las cosas más bonitas que hay en este mundo.",
+    "Te mereces solo lo mejor de este mundo, y espero que lo consigas.",
+    "Lo das todo das todo de ti, pones todo tu corazón y eso es algo que no todos pueden hacer."
 ];
 
-/*==================================
-    ELEMENTOS DEL DOM
-==================================*/
 
 const loginScreen = document.getElementById("login-screen");
 const loadingScreen = document.getElementById("loading-screen");
@@ -37,16 +28,6 @@ const progressBar = document.querySelector(".progress-bar");
 const loadingText = document.getElementById("loadingText");
 
 const phrase = document.getElementById("phrase");
-
-const music = document.getElementById("music");
-
-const openLetter = document.getElementById("openLetter");
-const letterModal = document.getElementById("letterModal");
-const closeLetter = document.getElementById("closeLetter");
-
-/*==================================
-    INICIO DE SESIÓN
-==================================*/
 
 loginBtn.addEventListener("click", login);
 
@@ -83,10 +64,6 @@ function login(){
     }
 
 }
-
-/*==================================
-    PANTALLA DE CARGA
-==================================*/
 
 function startLoading(){
 
@@ -136,10 +113,6 @@ function startLoading(){
 
 }
 
-/*==================================
-    MOSTRAR CONTENIDO
-==================================*/
-
 function showMainPage(){
 
     loadingScreen.classList.add("hidden");
@@ -147,10 +120,6 @@ function showMainPage(){
     mainContent.classList.remove("hidden");
 
 }
-
-/*==================================
-    FRASES AUTOMÁTICAS
-==================================*/
 
 let currentPhrase = 0;
 
@@ -175,59 +144,3 @@ setInterval(()=>{
     },400);
 
 },5000);
-
-/*==================================
-    MODAL CARTA
-==================================*/
-
-openLetter.addEventListener("click",()=>{
-
-    letterModal.classList.remove("hidden");
-
-});
-
-closeLetter.addEventListener("click",()=>{
-
-    letterModal.classList.add("hidden");
-
-});
-
-window.addEventListener("click",(e)=>{
-
-    if(e.target === letterModal){
-
-        letterModal.classList.add("hidden");
-
-    }
-
-});
-
-/*==================================
-    MÚSICA
-==================================*/
-
-function playMusic(){
-
-    if(music){
-
-        music.volume = 0.3;
-
-        music.play();
-
-    }
-
-}
-
-/*==================================
-    EFECTOS FUTUROS
-==================================*/
-
-// Aquí agregaremos:
-//
-// ❤️ Corazones flotando
-// ✨ Partículas
-// ⌨️ Máquina de escribir
-// 🌸 Animaciones de fotos
-// 🎆 Fuegos artificiales
-// 💗 Cursor brillante
-// 🌙 Fondo animado
