@@ -1,11 +1,5 @@
-/* ===========================
-   IMPORTAR FUENTES
-=========================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap');
 
-/* ===========================
-   VARIABLES
-=========================== */
 :root{
     --background: #08080d;
     --background2: #11111b;
@@ -24,10 +18,6 @@
 
     --radius: 20px;
 }
-
-/* ===========================
-   RESET
-=========================== */
 
 *{
     margin:0;
@@ -50,10 +40,6 @@ body{
 
 }
 
-/* ===========================
-   FONDO
-=========================== */
-
 #particles{
 
     position:fixed;
@@ -67,8 +53,6 @@ body{
     z-index:-2;
 
 }
-
-/* Fondo decorativo */
 
 body::before{
 
@@ -114,14 +98,10 @@ body::after{
 
 }
 
-/* ===========================
-   SECCIONES
-=========================== */
-
 section{
 
     width:100%;
-    min-height:100vh;
+    min-height:70vh;
 
     display:flex;
     justify-content:center;
@@ -130,10 +110,6 @@ section{
     padding:40px;
 
 }
-
-/* ===========================
-   LOGIN
-=========================== */
 
 .login-box{
 
@@ -238,10 +214,6 @@ section{
 
 }
 
-/* ===========================
-   BOTONES
-=========================== */
-
 button{
 
     width:100%;
@@ -273,10 +245,6 @@ button:hover{
     box-shadow:0 0 25px rgba(255,79,163,.6);
 
 }
-
-/* ===========================
-   PANTALLA DE CARGA
-=========================== */
 
 .terminal{
 
@@ -322,10 +290,6 @@ button:hover{
 
 }
 
-/* ===========================
-   CONTENIDO PRINCIPAL
-=========================== */
-
 main{
 
     display:flex;
@@ -366,10 +330,6 @@ header p{
 
 }
 
-/* ===========================
-   TARJETAS
-=========================== */
-
 .glass-card{
 
     width:min(900px,95%);
@@ -387,10 +347,6 @@ header p{
     box-shadow:var(--shadow);
 
 }
-
-/* ===========================
-   GALERÍA
-=========================== */
 
 .gallery{
 
@@ -448,10 +404,6 @@ header p{
 
 }
 
-/* ===========================
-   FRASES
-=========================== */
-
 .quotes{
 
     text-align:center;
@@ -465,10 +417,6 @@ header p{
     line-height:1.8;
 
 }
-
-/* ===========================
-   MODAL
-=========================== */
 
 #letterModal{
 
@@ -518,20 +466,11 @@ header p{
 
 }
 
-/* ===========================
-   UTILIDADES
-=========================== */
-
 .hidden{
 
     display:none !important;
 
 }
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
 @media(max-width:768px){
 
     .login-box{
