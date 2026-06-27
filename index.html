@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema Privado</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Fondo animado -->
+    <div id="particles"></div>
+
+    <!-- Pantalla de Login -->
+    <section id="login-screen">
+
+        <div class="login-box">
+
+            <div class="lock-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <h1>SISTEMA PRIVADO</h1>
+
+            <p class="subtitle">
+                Acceso Restringido
+            </p>
+
+            <p class="description">
+                Solo existe una persona autorizada para entrar.
+            </p>
+
+            <div class="input-group">
+
+                <label>Contraseña</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Ingresa la contraseña">
+
+            </div>
+
+            <button id="loginBtn">
+
+                DESBLOQUEAR
+
+            </button>
+
+            <p id="error-message"></p>
+
+        </div>
+
+    </section>
+
+    <!-- Pantalla de carga -->
+    <section id="loading-screen" class="hidden">
+
+        <div class="terminal">
+
+            <h2>Verificando identidad...</h2>
+
+            <div class="progress">
+
+                <div class="progress-bar"></div>
+
+            </div>
+
+            <p id="loadingText">
+
+                Inicializando sistema...
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Contenido principal -->
+    <main id="main-content" class="hidden">
+
+        <!-- Encabezado -->
+        <header>
+
+            <h1>
+
+                Bienvenida,
+                <span>Adalay ❤️</span>
+
+            </h1>
+
+            <p>
+
+                Acceso autorizado.
+
+            </p>
+
+        </header>
+
+        <!-- Mensaje principal -->
+        <section class="message">
+
+            <div class="glass-card">
+
+                <h2>
+
+                    Este sistema fue creado únicamente para ti.
+
+                </h2>
+
+                <p>
+
+                    No eres una visitante cualquiera...
+
+                    <br><br>
+
+                    Eres la razón por la que esta página existe.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Galería -->
+        <section class="gallery">
+
+            <h2>
+
+                Nuestros recuerdos
+
+            </h2>
+
+            <div class="gallery-grid">
+
+                <div class="photo">Foto 1</div>
+                <div class="photo">Foto 2</div>
+                <div class="photo">Foto 3</div>
+                <div class="photo">Foto 4</div>
+                <div class="photo">Foto 5</div>
+                <div class="photo">Foto 6</div>
+
+            </div>
+
+        </section>
+
+        <!-- Frases -->
+        <section class="quotes">
+
+            <div class="glass-card">
+
+                <p id="phrase">
+
+                    "Cada momento contigo se convirtió en mi favorito."
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Carta -->
+        <section class="letter">
+
+            <div class="glass-card">
+
+                <h2>
+
+                    Último Archivo
+
+                </h2>
+
+                <button id="openLetter">
+
+                    Abrir
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Modal Carta -->
+    <div id="letterModal" class="hidden">
+
+        <div class="letter-content">
+
+            <span id="closeLetter">
+
+                &times;
+
+            </span>
+
+            <h2>
+
+                Para Adalay ❤️
+
+            </h2>
+
+            <p>
+
+                Aquí irá la carta que escribirás para ella...
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Música -->
+    <audio id="music" loop>
+
+        <source src="music.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
